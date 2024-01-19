@@ -1,2 +1,5 @@
 # local package
--e .
+- pandas (>= 1.5.3)
+- numpy (>= 1.23.5)
+- matplotlib (>= 3.7.1)
+- cartopy (>= 0.22.0)
