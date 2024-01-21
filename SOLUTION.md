@@ -35,14 +35,7 @@ project_root/
 │   ├── __init__.py
 │   ├── data_processor.py
 │   ├── bdeck_reader.py
-│   ├── swath_plotter.py
-│   └── utils/
-│       ├── __init__.py
-│       └── utils.py
-│
-├── tests/
-│   ├── __init__.py
-│   └── test_data_processor.py
+│   └── swath_plotter.py
 │
 ├── .gitignore
 ├── requirements.txt
