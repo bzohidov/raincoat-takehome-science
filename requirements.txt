@@ -3,3 +3,6 @@
 - numpy (>= 1.23.5)
 - matplotlib (>= 3.7.1)
 - cartopy (>= 0.22.0)
+- xarray (>= 2023.7.0)
+- yaml (>= 6.0.1)
+- argparse (>= 1.1)
