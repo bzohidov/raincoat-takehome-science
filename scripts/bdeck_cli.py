@@ -24,7 +24,6 @@ def run(input_file, config_file):
 
     Parameters:
     - input_file (str): Path to the input file.
-    - output_file (str): Path to save the output file.
     - config_file (str): Path to the YAML configuration file.
     """
     try:
