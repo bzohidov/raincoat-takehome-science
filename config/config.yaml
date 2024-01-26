@@ -1,0 +1,22 @@
+# File paths
+files:
+  path_bdeck_external: data/external/bal152017.dat
+  path_bdeck_intermediate: data/interim/
+  path_bdeck_processed: data/processed/
+  output_ncfile: output/raw_swath_data_over_Puerto_Rico.nc
+  output_plot_swath_wind_speed: output/swath_wind_speed_over_Puerto_Rico.png
+  
+
+# Puerto Rico area
+area:
+  lat_max: 18.5
+  lat_min: 17.5
+  lon_max: -65.5
+  lon_min: -67.5
+
+# grid resolution
+grid_resolution: 0.1
+
+# Plotting options
+plotting:
+  showfig: True

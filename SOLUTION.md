@@ -10,36 +10,59 @@ In this coding solution, I used the formula originated by Jelesnianski (1965) fo
 ## Code Structure
 To achieve that, the solution is divided into several sub-functions forming the following structure:
 
-project_root/
-│
-├── data/
-│   ├── external/
-│   ├── interim/
-│   └── processed/
-│
-├── cli/
-│   ├── __init__.py
-│   ├── bdeck_cli.py
-│   ├── config_parser.py
-│   └── main.py
-│
-├── docs/
-│   └── SOLUTION.md
-│
-├── notebooks/
-│   └── wind_speed_derivation.ipynb
-│
-├── output/
-│
-├── src/
-│   ├── __init__.py
-│   ├── data_processor.py
-│   ├── bdeck_reader.py
-│   └── swath_plotter.py
-│
-├── .gitignore
-├── requirements.txt
-└── README.md
+|   CHANGELOG.md
+|   pyproject.toml
+|   README.md
+|   requirements.txt
+|   RESULTS.md
+|   setup.cfg
+|   setup.py
+|   SOLUTION.md
+|   structure.txt
+|
+|       
++---config
+|       config.py
+|       config.yaml
+|       __init__.py
+|       
++---data
+|   |   
+|   +---external
+|   |       bal152017.dat
+|   |       
+|   +---interim
+|   |       bal152017.dat
+|   |       
+|   \---processed
++---docs
+|       quick_start.md
+|       
++---notebooks
+|       .gitkeep
+|       
++---output
+|       .gitkeep
+|       
++---scripts
+|       bdeck_cli.py
+|       __init__.py
+|       
+\---src
+    \---raincoat_takehome_science
+        |   __init__.py
+        |   
+        +---data
+        |       convert.py
+        |       data_processor.py
+        |       reader_bdeck.py
+        |       save_to_netcdf.py
+        |       __init__.py
+        |       
+        \---plotting
+                swath_plotter.py
+                __init__.py
+
 
 The hurricane track is provided by NOAA’s National Hurricane Center (NHC) in the form of a b-deck file.
 
@@ -48,13 +71,11 @@ The hurricane track is provided by NOAA’s National Hurricane Center (NHC) in t
 - numpy (>= 1.23.5)
 - matplotlib (>= 3.7.1)
 - cartopy (>= 0.22.0)
+- xarray (>= 2023.7.0)
+- yaml (>= 6.0.1)
+- argparse (>= 1.1)
+- netCDF4 (>= 1.6.5)
 
-## Functionality
-- `bdeck_reader`: Reads b-deck files into a DataFrame.
-- `data_processor`: Implements wind speed calculation and swath generation.
-- `swath_plotter`: Plots the generated swath using Cartopy.
-- `bdeck_cli`: Command Line Interface for executing tasks.
-- `config_parser`: Reads configuration from a YAML file.
 
 ## Configuration
 Describes how to use the configuration file to customize the execution parameters.

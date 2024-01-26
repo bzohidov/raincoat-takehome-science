@@ -1,0 +1,63 @@
+Folder PATH listing for volume DATA
+Volume serial number is 46B0-FDD0
+E:.
+|   .editorconfig
+|   .env.example
+|   .gitignore
+|   .pre-commit-config.yaml
+|   CHANGELOG.md
+|   pyproject.toml
+|   README.md
+|   requirements.txt
+|   RESULTS.md
+|   setup.cfg
+|   setup.py
+|   SOLUTION.md
+|   structure.txt
+|   
++---.vscode
+|       launch.json
+|       
++---config
+|       config.py
+|       config.yaml
+|       __init__.py
+|       
++---data
+|   |   .gitignore
+|   |   
+|   +---external
+|   |       bal152017.dat
+|   |       
+|   +---interim
+|   |       bal152017.dat
+|   |       
+|   \---processed
++---docs
+|       quick_start.md
+|       
++---notebooks
+|       .gitkeep
+|       
++---output
+|       .gitkeep
+|       
++---scripts
+|       bdeck_cli.py
+|       __init__.py
+|       
+\---src
+    \---raincoat_takehome_science
+        |   __init__.py
+        |   
+        +---data
+        |       convert.py
+        |       data_processor.py
+        |       reader_bdeck.py
+        |       save_to_netcdf.py
+        |       __init__.py
+        |       
+        \---plotting
+                swath_plotter.py
+                __init__.py
+                
